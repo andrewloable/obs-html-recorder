@@ -10,7 +10,10 @@ Records html to video using OBS
 obs-html-recorder -h
 
 ## Flags
--h : height of the browser
--w : width of the browser
--s : time in seconds to record the html
--url : the url of the html to be recorded
+* -h : height of the browser
+* -w : width of the browser
+* -s : time in seconds to record the html
+* -url : the url of the html to be recorded
+
+## Sample Usage
+obs-html-recorder -h 1920 -w 1080 -s 30 -url "https://fast.com"
