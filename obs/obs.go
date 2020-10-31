@@ -11,6 +11,7 @@ import (
 
 	"github.com/andrewloable/obs-html-recorder/config"
 	"github.com/andrewloable/obs-html-recorder/profile"
+	"github.com/andrewloable/obs-html-recorder/scene"
 	obsws "github.com/christopher-dG/go-obs-websocket"
 	"github.com/mitchellh/go-ps"
 )
@@ -64,6 +65,11 @@ func InitiateObsRecorder(prof profile.Profile) (obsws.Client, error) {
 	log.Println("terminate obs")
 	if err != nil {
 		log.Println("error: terminate obs")
+		return obsws.Client{}, err
+	}
+
+	_, err = scene.GenerateDefaultScene()
+	if err != nil {
 		return obsws.Client{}, err
 	}
 

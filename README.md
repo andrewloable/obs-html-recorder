@@ -4,8 +4,7 @@ Records html to video using OBS
 ## Prerequisites
 1. OBS Studio to be installed (https://obsproject.com/)
 2. Install the OBS Websocket plugin (https://github.com/Palakis/obs-websocket/releases)
-3. In OBS, add a Browser source and then mute the audio volume if you don't want to include it in the recording.
-4. Configure config.json file to point to correct files/folders
+3. Configure config.json file to point to correct files/folders
 
 ## Help
 obs-html-recorder -h
