@@ -44,7 +44,7 @@ func GenerateDefaultScene() (bool, error) {
 
 // GenerateSceneFilePath - Generate a file name based on the profile
 func GenerateSceneFilePath() string {
-	return "basic/scenes/default.json"
+	return "basic/scenes/Untitled.json"
 }
 
 // GenerateScene - Returns scene settings string
